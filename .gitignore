@@ -1,0 +1,6 @@
+.env
+.venv/
+__pycache__/
+data/raw/
+data/processed/
+# data/splits.json IS committed on purpose: it's your locked test set
