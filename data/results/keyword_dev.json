@@ -1,0 +1,269 @@
+{
+  "predictor": "keyword",
+  "split": "dev",
+  "n_contracts": 480,
+  "quotes_total": 1279,
+  "quotes_fabricated": 0,
+  "fabrication_rate": 0.0,
+  "clauses": {
+    "Renewal Term": {
+      "tp": 78,
+      "fp": 2,
+      "fn": 91,
+      "tn": 309,
+      "precision": 0.975,
+      "recall": 0.46153846153846156,
+      "f1": 0.6265060240963856
+    },
+    "Notice Period To Terminate Renewal": {
+      "tp": 6,
+      "fp": 2,
+      "fn": 100,
+      "tn": 373,
+      "precision": 0.75,
+      "recall": 0.05660377358490566,
+      "f1": 0.10526315789473685
+    },
+    "Expiration Date": {
+      "tp": 121,
+      "fp": 41,
+      "fn": 266,
+      "tn": 88,
+      "precision": 0.7469135802469136,
+      "recall": 0.31266149870801035,
+      "f1": 0.4408014571948998
+    },
+    "Termination For Convenience": {
+      "tp": 45,
+      "fp": 136,
+      "fn": 127,
+      "tn": 226,
+      "precision": 0.24861878453038674,
+      "recall": 0.2616279069767442,
+      "f1": 0.254957507082153
+    },
+    "Cap On Liability": {
+      "tp": 101,
+      "fp": 55,
+      "fn": 158,
+      "tn": 200,
+      "precision": 0.6474358974358975,
+      "recall": 0.38996138996138996,
+      "f1": 0.4867469879518072
+    },
+    "Governing Law": {
+      "tp": 334,
+      "fp": 65,
+      "fn": 76,
+      "tn": 62,
+      "precision": 0.8370927318295739,
+      "recall": 0.8146341463414634,
+      "f1": 0.8257107540173052
+    }
+  },
+  "examples": [
+    {
+      "contract": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT",
+      "clause": "Renewal Term",
+      "outcome": "FN",
+      "predicted": [],
+      "gold": [
+        "If Distributor                            complies with all of the terms of this Agreement, the                            Agreement  shall be  renewable on an annual basis for                        "
+      ]
+    },
+    {
+      "contract": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT",
+      "clause": "Expiration Date",
+      "outcome": "FN+FP",
+      "predicted": [
+        "(H)    2,856  unit each in the lat  three  years of                          the initial Term of this  Agreement  and any                          renewals thereof.",
+        "For purposes of this Agreement, a Product Year shall be the twelve (12) month period  following the  commencement  of the initial Term of this Agreement and each twelve  (12)  months  thereafter."
+      ],
+      "gold": [
+        "The term of this  Agreement  shall be ten (10)                            years (the \"Term\")  which shall  commence on the date                            upon which the Company  delivers to  Distribu"
+      ]
+    },
+    {
+      "contract": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT",
+      "clause": "Governing Law",
+      "outcome": "FN",
+      "predicted": [],
+      "gold": [
+        "This Agreement is to be construed according to the laws          of the State of Illinois."
+      ]
+    },
+    {
+      "contract": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT",
+      "clause": "Expiration Date",
+      "outcome": "FN",
+      "predicted": [],
+      "gold": [
+        "\"Term\" means the earlier of: (a) the end of the two year period from the Effective Date to 31 July 2013; or (b) the last day of the calendar month  within which the Maximum Distribution Commitment is ",
+        "This Agreement shall commence on the Effective Date and, unless earlier terminated as set out in this Agreement, shall continue  for the Term."
+      ]
+    },
+    {
+      "contract": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT",
+      "clause": "Cap On Liability",
+      "outcome": "FN+FP",
+      "predicted": [
+        "9.4 Subject to Clauses 9.1 and 9.2, each party's total liability under or in connection with this Agreement (whether in contract, tort or  otherwise) arising in any Contract Year is limited to the gre"
+      ],
+      "gold": [
+        "Notwithstanding anything to the contrary, in no event shall the [ * ] paid or payable to Distributor by Google pursuant to Clause 4.1  (Payments) exceed the [ * ].",
+        "Subject to Clauses 9.1 and 9.2, neither party shall be liable under this Agreement (whether in contract, tort or otherwise) for any:\n\n  (a) loss of anticipated savings;\n\n  (b) loss of business opportu",
+        "Subject to Clauses 9.1 and 9.2, each party's total liability under or in connection with this Agreement (whether in contract, tort or  otherwise) arising in any Contract Year is limited to the greater",
+        "The foregoing Clauses 10.1 to 10.5 states the parties' entire liability and exclusive remedy with respect to infringement of a third party's  Intellectual Property Rights."
+      ]
+    },
+    {
+      "contract": "LohaCompanyltd_20191209_F-1_EX-10.16_11917878_EX-10.16_Supply Agreement",
+      "clause": "Expiration Date",
+      "outcome": "FN",
+      "predicted": [],
+      "gold": [
+        "The Contract is valid for 5 years, beginning from and ended on ."
+      ]
+    },
+    {
+      "contract": "LohaCompanyltd_20191209_F-1_EX-10.16_11917878_EX-10.16_Supply Agreement",
+      "clause": "Cap On Liability",
+      "outcome": "FP",
+      "predicted": [
+        "The penalty, however, shall not exceed 5% of the total value of the goods involved in the late delivery."
+      ],
+      "gold": []
+    },
+    {
+      "contract": "CENTRACKINTERNATIONALINC_10_29_1999-EX-10.3-WEB SITE HOSTING AGREEMENT",
+      "clause": "Renewal Term",
+      "outcome": "FN",
+      "predicted": [],
+      "gold": [
+        "This Agreement shall automatically be renewed for one (1) or more one (1) month periods unless either the Customer or i-on gives notice to the other party of its intention not to renew the",
+        "Agreement, which notice must be given not less than fifteen (15) days before the end of the respective initial or renewal term."
+      ]
+    },
+    {
+      "contract": "CENTRACKINTERNATIONALINC_10_29_1999-EX-10.3-WEB SITE HOSTING AGREEMENT",
+      "clause": "Notice Period To Terminate Renewal",
+      "outcome": "FN",
+      "predicted": [],
+      "gold": [
+        "This Agreement shall automatically be renewed for one (1) or more one (1) month periods unless either the Customer or i-on gives notice to the other party of its intention not to renew the",
+        "Agreement, which notice must be given not less than fifteen (15) days before the end of the respective initial or renewal term."
+      ]
+    },
+    {
+      "contract": "CENTRACKINTERNATIONALINC_10_29_1999-EX-10.3-WEB SITE HOSTING AGREEMENT",
+      "clause": "Expiration Date",
+      "outcome": "FN",
+      "predicted": [],
+      "gold": [
+        "The term of this Agreement for the Hosted Site shall commence upon April 1, 1999 and shall continue for a period of six (6) months, unless earlier terminated in accordance with provisions hereof."
+      ]
+    },
+    {
+      "contract": "CENTRACKINTERNATIONALINC_10_29_1999-EX-10.3-WEB SITE HOSTING AGREEMENT",
+      "clause": "Cap On Liability",
+      "outcome": "FN",
+      "predicted": [],
+      "gold": [
+        "i-on will not be liable under any circumstances for any lost profits or other consequential damages, even if i-on has been advised as to the possibility of such damages. i-on's liability for damages t"
+      ]
+    },
+    {
+      "contract": "VEONEER,INC_02_21_2020-EX-10.11-JOINT VENTURE AGREEMENT",
+      "clause": "Expiration Date",
+      "outcome": "FN",
+      "predicted": [],
+      "gold": [
+        "This Amendment shall only become effective upon the VNBJ Closing with respect to Article 1.1 and the VNBZ Closing with respect to Article 1.2, and shall terminate without any force or effect in the ev"
+      ]
+    },
+    {
+      "contract": "DovaPharmaceuticalsInc_20181108_10-Q_EX-10.2_11414857_EX-10.2_Promotion Agreement",
+      "clause": "Expiration Date",
+      "outcome": "FN",
+      "predicted": [],
+      "gold": [
+        "This Agreement shall become effective as of the Effective Date and, unless earlier terminated as provided in this ARTICLE 12, shall extend until the four (4) year anniversary of the Effective Date (th"
+      ]
+    },
+    {
+      "contract": "DovaPharmaceuticalsInc_20181108_10-Q_EX-10.2_11414857_EX-10.2_Promotion Agreement",
+      "clause": "Termination For Convenience",
+      "outcome": "FN+FP",
+      "predicted": [
+        "The captions to the several Articles, Sections and subsections hereof are not a part of this Agreement, but are merely for convenience to assist in locating and reading the several Articles and Sectio"
+      ],
+      "gold": [
+        "Either Party shall have the right to terminate this Agreement before the end of the Term for its convenience upon [***] written notice to the other Party (and any such termination shall become effecti"
+      ]
+    },
+    {
+      "contract": "DovaPharmaceuticalsInc_20181108_10-Q_EX-10.2_11414857_EX-10.2_Promotion Agreement",
+      "clause": "Cap On Liability",
+      "outcome": "FN",
+      "predicted": [],
+      "gold": [
+        "Notwithstanding the above, the sole remedy of Dova for breach of this Section 4.1.2 shall be (i) the adjustment to the promotion fee as set forth in Section 6.1.2 and (ii) the termination right set ou",
+        "NOTWITHSTANDING ANY OTHER PROVISION CONTAINED HEREIN (OTHER THAN AS SET FORTH IN THE SECOND SENTENCE OF THIS SECTION 11.4), IN NO EVENT SHALL DOVA (OR ITS AFFILIATES) OR VALEANT (OR ITS AFFILIATES) BE"
+      ]
+    },
+    {
+      "contract": "DovaPharmaceuticalsInc_20181108_10-Q_EX-10.2_11414857_EX-10.2_Promotion Agreement",
+      "clause": "Governing Law",
+      "outcome": "FN+FP",
+      "predicted": [
+        "10.1.1 it is a corporation duly organized and validly existing under the laws of the state or other jurisdiction of its incorporation;",
+        "10.2.1 it is a limited liability company duly organized and validly existing under the laws of the state or other jurisdiction of its incorporation;"
+      ],
+      "gold": [
+        "This Agreement and any and all matters arising directly or indirectly herefrom shall be governed by and construed and enforced in accordance with the internal laws of the [***] applicable to agreement"
+      ]
+    },
+    {
+      "contract": "PACIRA PHARMACEUTICALS, INC. - A_R STRATEGIC LICENSING, DISTRIBUTION AND MARKETING AGREEMENT ",
+      "clause": "Notice Period To Terminate Renewal",
+      "outcome": "FN",
+      "predicted": [],
+      "gold": [
+        "Notwithstanding the foregoing, this  Agreement can be terminated by EKR at the end of the Initial Term by delivery of written notice to PPI at least one hundred eighty (180)  days prior to the end of "
+      ]
+    },
+    {
+      "contract": "PACIRA PHARMACEUTICALS, INC. - A_R STRATEGIC LICENSING, DISTRIBUTION AND MARKETING AGREEMENT ",
+      "clause": "Expiration Date",
+      "outcome": "FN+FP",
+      "predicted": [
+        "Thereafter  the term of this Agreement shall automatically renew for consecutive periods of two (2) years each."
+      ],
+      "gold": [
+        "This Agreement shall commence on the Effective Date and, subject to earlier termination in accordance with the provisions of Section 16, shall continue in force for a period being the longer of fiftee"
+      ]
+    },
+    {
+      "contract": "PACIRA PHARMACEUTICALS, INC. - A_R STRATEGIC LICENSING, DISTRIBUTION AND MARKETING AGREEMENT ",
+      "clause": "Cap On Liability",
+      "outcome": "FN",
+      "predicted": [],
+      "gold": [
+        "Any and all liability of PPI to EKR howsoever arising in respect of this Agreement, the Transition Services and Inventory Agreement or the Supply Agreement and their performance, in contract tort or o",
+        "however that such limitation shall not apply to the extent that EKR or any EKR Indemnified Party is required to pay in excess of such  amount to a third party in respect of a final judgment or order o",
+        "Any and all liability of EKR to PPI howsoever arising in respect of this Agreement, the Transition Services and Inventory Agreement or the Supply Agreement and their performance in contract tort or ot",
+        "Notwithstanding anything contained in this Agreement or the Transition Services and Inventory Agreement or the  Supply Agreement in no circumstance shall either Party be liable to the other in contrac"
+      ]
+    },
+    {
+      "contract": "MetLife, Inc. - Remarketing Agreement",
+      "clause": "Expiration Date",
+      "outcome": "FN",
+      "predicted": [],
+      "gold": [
+        "In addition, the",
+        "obligations of the Remarketing Agents may be terminated by them by notice given to the Company prior to 12:00 noon, New York City time on the Remarketing Settlement Date if, prior to that time, any of"
+      ]
+    }
+  ]
+}
